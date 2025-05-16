@@ -1,8 +1,10 @@
 #include<iostream>
 using namespace std;
+
 int main(){
-    string input;
-    getline(cin,input);
-    cout<<"Your name"<<input<<endl;
+    int a,b;
+    cout<<"Enter the number";
+    cin>>a;
+    cout<<a<<endl;
     return 0;
 }

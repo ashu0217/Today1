@@ -1,5 +1,5 @@
 #include<iostream>
-uing namespace std;
+using namespace std;
 
 struct Person{
     char name[100];
@@ -11,7 +11,7 @@ int main(){
     cout<<"Person details"<<endl<<"Enter the person name:"<<endl;
     cin.getline(p1.name,100);
     cout<<"Enter the age"<<endl;
-    cin<<p1.age;
+    cin>>p1.age;
     cout<<endl<<"Enter the salary"<<endl;
     cin>>p1.salary;
 
