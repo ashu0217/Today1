@@ -1,19 +1,38 @@
-
-//Linear search
 #include<iostream>
 using namespace std;
-int main(){
-    int arr[10]={1,2,3,4,5,6,7,8,9,10};
-    int key=10;
-    int final;
-    int size1=sizeof(arr)/sizeof(arr[0]);
-    for(int i=0;i<size1;i++){
-        if (key==arr[i]){
-            final=arr[i];
-        }
+
+class bank{
+    public:
+    string name;
+    int account;
+    static int count;
+
+    bank(string n,int ac){
+        name=n;
+        account=ac;
+        count++;
 
     }
-    cout<<"Key found"<<arr[i]<endl;
-    return 0;
-}
+    void display(){
+        cout<<name<<account<<endl;
+    }
+    static void showcount(){
+        count<<"total"<<count<<endl
+    }
 
+
+};
+int student::count=0;
+int main(){
+    bank b1("AShutosh",2)
+    bank b2("AShutosh",3)
+    bank b3("AShutosh",4)
+
+    b1.display();
+    b2.display();
+    b3.display();
+
+    student::showcount();
+    return 0;
+
+}
